@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Позиціонування</title>
+    <script>
+        window.onload = () => { //коли сторінка завантажиться
+            // Отримуємо посилання на діалогове вікно
+            const dialog = document.getElementById('happy-pasxa');
+            const myInterval = setInterval(() => { //закускаємо таймер на 5 секунд - 5000 мс
+                  dialog.style.display = 'block'; //показуємо діалог
+            }, 5000);
+
+            clearInterval(myInterval); //зупиняємо таймер
+            
+            // Отримуємо посилання на кнопку закриття
+            const btnClose = document.getElementById('btnClose');
+            btnClose.onclick = () => {
+                dialog.style.display = 'none'; //ховаємо діалог
+            };
+        }
+    </script>
+
+
+</head>
+<body>
+    <h1>Привіт козаки і козачки</h1>
+        <div class="dialog" id="happy-pasxa">
+            <header>
+                <div class="title">
+                    Вітаю з Пасхою!
+                </div>
+                <div class="my-close">
+                    &times;
+                </div>
+            </header>
+            <main>
+                <h2>Гарних свят! Хорошого настрою! :D</h2>
+                Можна іти купатися тепер.
+                <img src="/Lesson5.Position HTML/images/photo_2026-01-25_10-15-23.jpg" alt="idk">
+            </main>
+            <footer>
+            <hr/>
+            <div class="buttons">
+                <a href="#" class="danger">Хочу</a>
+                <a href="#">Не хочу</a>
+            </div>
+            </footer>
+        </div>
+</body>
+</html>

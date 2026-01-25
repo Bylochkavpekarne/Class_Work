@@ -1,0 +1,80 @@
+body{
+    background-color: aquamarine;
+}
+
+.dialog{
+    display: none;
+    background-color: #fff;
+    width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.dialog header{
+    height: 55px;
+    background-color: aqua;
+}
+
+.dialog header .title{
+    font-size: 24px;
+    float: left;
+    color: white;
+    margin: 15px 0 0 15px;
+}
+
+.dialog header .my-close{
+    float: right;
+    margin: 5px 10px 0px 0px;
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dialog main{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    clear: both;
+    color: #333;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.dialog main img{
+    width: 300px;
+}
+
+.dialog footer{
+    margin-top: 25px;
+}
+
+.dialog footer hr{
+    border: 1px #ecedec solid;
+}
+
+.dialog footer .buttons{
+    float: right;
+    height: 30px;
+    margin: 10px;
+}
+
+.dialog footer .buttons a{
+    font-family: 'Times New Roman', Times, serif, 'Courier New', Courier, monospace;
+    border: 1px #ccc solid;
+    color: #333;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px 10px;
+}
+
+.dialog footer .buttons a:hover {
+    margin: 1px;
+    border-radius: 0;
+    padding: 7px 12px;
+}
+
+.dialog footer .buttons .danger {
+    color: #fff;
+    background-color: #ff6666;
+}
