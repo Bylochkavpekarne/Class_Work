@@ -1,0 +1,12 @@
+print("Яке Ваше прізвище? ")
+lastName = input()
+print("Яке Ваше ім'я? ")
+firstName = input()
+print("Який Ваш номер телефону? ")
+phoneNumber = input()
+print("Яке Ваше місто? ")
+City = input()
+print("Яка Ваша адреса? ")
+Adres = input()
+
+print("Ваша анкета: " + lastName + ' ' + firstName + ' ' + phoneNumber + ' ' + City + ' ' + Adres)

@@ -6,21 +6,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Позиціонування</title>
     <script>
-        window.onload = () => { //коли сторінка завантажиться
-            // Отримуємо посилання на діалогове вікно
-            const dialog = document.getElementById('happy-pasxa');
-            const myInterval = setInterval(() => { //закускаємо таймер на 5 секунд - 5000 мс
-                  dialog.style.display = 'block'; //показуємо діалог
-            }, 5000);
+    window.onload = () => {
+        const dialog = document.getElementById('happy-pasxa');
 
-            clearInterval(myInterval); //зупиняємо таймер
-            
-            // Отримуємо посилання на кнопку закриття
-            const btnClose = document.getElementById('btnClose');
-            btnClose.onclick = () => {
-                dialog.style.display = 'none'; //ховаємо діалог
-            };
-        }
+        setTimeout(() => {
+            dialog.style.display = 'block';
+        }, 5000);
+
+        const btnClose = document.querySelector('.my-close');
+        btnClose.onclick = () => {
+            dialog.style.display = 'none';
+        };
+    };
     </script>
 
 
@@ -39,7 +36,7 @@
             <main>
                 <h2>Гарних свят! Хорошого настрою! :D</h2>
                 Можна іти купатися тепер.
-                <img src="/Lesson5.Position HTML/images/photo_2026-01-25_10-15-23.jpg" alt="idk">
+                <img src="/images/photo_2026-01-25_10-15-23.jpg" alt="idk">
             </main>
             <footer>
             <hr/>
