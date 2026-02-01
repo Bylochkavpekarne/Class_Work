@@ -58,3 +58,24 @@ first = user.find('!') + 1
 second = user.find('@')
 
 print = s[first:second]
+
+
+print("\n-----Другий рівень-----\n")
+
+
+
+print("\n-----Перше завдання-----\n")
+
+
+
+text = input("Введіть Ваш текст: ")
+simvols = input("Введіть Ваші символи: ")
+
+words = text.split()
+result = []
+for word in words:
+    if not any(ch in word for ch in simvols):
+        result.append(word)
+
+print("Words: ")
+print(' '.join(result))
