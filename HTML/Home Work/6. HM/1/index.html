@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+    
+</head>
+<body class="bg-success p-4 text-white"> <!--Задаємо колір бг та колір тексту -->
+  <div class="container">
+
+    <h5>Home | Articles |</h5>
+
+    <h1 class="fw-bold mb-4"> <!-- Робимо текст жирним, робимо відступ знизу mb-4 ( m - margin, b - bottom, 4 - розмір відступу) -->
+      The Difference Between Responsive and Adaptive Design
+    </h1>
+
+    <div class="row align-items-center"> <!-- Задаємо клас row та центруємо об'єкти-->
+
+      <!-- avatar -->
+      <div class="col-12 col-sm-auto col-md-auto mb-4 mb-sm-3 mb-md-0"> <!-- 12 колонок, md - автоматично, робимо відступ знизу -->
+        <!-- Робимо картинку круглою -->
+        <img src="images/cat1.jpg"
+             class="rounded-circle" 
+             style="width:100px; height:100px; object-fit:cover;" 
+             alt="cat">
+      </div>
+
+      <!-- main -->
+      <div class="col-12 col-sm col-md"> <!-- 12 колонок, автоматична ширина на екранах >= 768px -->
+        <div class="row"> <!-- Задаємо клас row для колонок -->
+
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <p class="mb-0">Author</p>
+            <p class="fw-bold mb-0">Cat</p>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <p class="mb-0">50 comments</p>
+            <p class="fw-bold mb-0">Check</p>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <p class="mb-0">Published</p>
+            <p class="fw-bold mb-0">Nov 11, 2018</p>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <p class="mb-0">Updated</p>
+            <p class="fw-bold mb-0">Nov 17, 2018</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
